@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularAssignment2';
+  fruitsList = ['Apples', 'Bananas', 'Cherries'];
+
+  addNewItem(newItem){
+    this.fruitsList.push(newItem);
+    console.log(this.fruitsList);
+  }
+
 }
